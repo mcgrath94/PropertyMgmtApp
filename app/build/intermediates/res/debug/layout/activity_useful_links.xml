@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#788cb3"
+    tools:context="com.example.propertymgmtapp.UsefulLinks">
+
+    <TextView
+        android:id="@+id/txtLinksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Useful Links"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtLinksTitle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtRentingLinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txtLinksTitle"
+            android:layout_marginTop="18dp"
+            android:text="Renting"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvDaft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="http://www.daft.ie/ad-entry/?src=nav"
+        android:layout_below="@+id/txtLinksTitle"
+        android:layout_toRightOf="@+id/tvRights"
+        android:layout_toEndOf="@+id/tvRights" />
+
+    <TextView
+        android:id="@+id/tvRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="http://www.rent.ie/advertise/"
+        android:layout_below="@+id/tvDaft"
+        android:layout_alignLeft="@+id/tvDaft"
+        android:layout_alignStart="@+id/tvDaft"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/tvMyHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="http://www.myhome.ie/advertise-with-us"
+        android:layout_below="@+id/tvRent"
+        android:layout_alignLeft="@+id/tvRent"
+        android:layout_alignStart="@+id/tvRent"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/tvPTRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="http://www.prtb.ie/landlords/new-landlords"
+        android:layout_below="@+id/tvCitizenInfo"
+        android:layout_toRightOf="@+id/tvRights"
+        android:layout_toEndOf="@+id/tvRights"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/tvCitizenInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="http://www.citizensinformation.ie/en/housing/renting_a_home/landlords_rights_and_obligations.html"
+        android:layout_below="@+id/tvRights"
+        android:layout_toRightOf="@+id/tvRights"
+        android:layout_toEndOf="@+id/tvRights"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/tvRights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rights"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/tvMyHome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+
+<!-- From: file:/C:/Users/Drogba/Desktop/CloudPropApp/PropertyMgmtApp/app/src/main/res/layout/activity_useful_links.xml -->
